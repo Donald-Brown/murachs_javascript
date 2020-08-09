@@ -3,10 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Enhanced Future Value</title>
 </head>
 <body>
-  <p>Thanks for using the future value app!</p>
+  <h1>Future Value Calculator</h1>
+
+  <label for="total_investment">Total Investment</label>
+  <input type="text" id="total_investment">
+  <span id="total_investment_error">&nbsp;</span><br>
+
+  <label for="interest_rate">Annual Interest Rate</label>
+  <input type="text" id="interest_rate">
+  <span id="interest_rate_error">&nbsp;</span><br>
+
+  <label for="years">Number of Years</label>
+  <input type="text" id="years">
+  <span id="years_error">&nbsp;</span><br>
+
+  <label for="value">Future Value</label>
+  <input type="text" id="value" disabled><br>
+
+  <label>&nbsp;</label>
+  <input type="button" id="calculate" value="Calculate">
+
+  <script src="app.js"></script>
 </body>
 </html>
