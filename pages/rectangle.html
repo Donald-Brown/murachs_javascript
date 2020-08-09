@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangle</title>
+  <script>
+    let width = parseFloat(prompt('Please enter the width'));
+    let height = parseFloat(prompt('Please enter a height'));
+  </script>
+</head>
+<body>
+  <script>
+    document.write(`<h1>The Area and Perimeter App</h1>
+      width: ${width} <br>Height: ${height}<br><br>
+      Area: ${(width * height).toFixed(2)} <br> Perimeter: ${((width*2)+(height*2)).toFixed(2)}
+    `);
+  </script>
+  <p>thanks for using the Area and Perimeter App!</p>
+</body>
+</html>
