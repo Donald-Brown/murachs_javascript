@@ -25,7 +25,9 @@ let toggle = function(){
 window.onload = function(){
   // get the h2 tags
   let faqs = $('faqs');
+  
   let h2Elements = faqs.getElementsByTagName('h2');
+
   
   // attach event handler to each tag
   for(let i = 0; i < h2Elements.length; i++){
