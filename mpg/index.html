@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Calculate Miles Per Gallon</title>
-</head>
-<body>
-  <main>
-    <h1>Calculate Miles Per Gallon</h1>
-    <label for="miles">Total Miles Driven</label>
-    <input type="text" id="miles">
-    <span id="miles_error">*</span><br>
-    <label for="gallons">Gallons Used</label>
-    <input type="text" id="gallons">
-    <span id="gallons_error">*</span><br>
-    <label for="mpg">Miles Per Gallon</label>
-    <input type="text" id="mpg" disabled><br>
-    <label>&nbsp;</label>
-    <input type="button" id="calculate_mpg" value="Calculate MPG"><br>
-    <label>&nbsp;</label>
-    <input type="button" id="clear_entries" value="Clear Entries">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicons/favicon1-16x16.png"
+    />
 
-  </main>
-  <script src="app.js"></script>
-</body>
+    <meta name="theme-color" content="#ffffff" />
+    <title>Calculate Miles Per Gallon</title>
+  </head>
+  <body>
+    <main>
+      <h1>Calculate Miles Per Gallon</h1>
+      <label for="miles">Total Miles Driven</label>
+      <input type="text" id="miles" />
+      <span id="miles_error">*</span><br />
+      <label for="gallons">Gallons Used</label>
+      <input type="text" id="gallons" />
+      <span id="gallons_error">*</span><br />
+      <label for="mpg">Miles Per Gallon</label>
+      <input type="text" id="mpg" disabled /><br />
+      <label>&nbsp;</label>
+      <input type="button" id="calculate_mpg" value="Calculate MPG" /><br />
+      <label>&nbsp;</label>
+      <input type="button" id="clear_entries" value="Clear Entries" />
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
