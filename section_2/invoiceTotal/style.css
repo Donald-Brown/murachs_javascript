@@ -1,0 +1,26 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #eee;
+  width: 500px;
+  margin: 2em auto 0;
+  border: 3px solid blue;
+  padding: 0 2em 1em;
+}
+
+h1 {
+  font-size: 150%;
+  color: blue;
+  margin-bottom: .5em;
+}
+
+label {
+  width: 10em;
+  float: left;
+}
+
+input, select {
+  width: 12em;
+  margin-left: 1em;
+  margin-bottom: .5em;
+}

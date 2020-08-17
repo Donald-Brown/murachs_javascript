@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  margin: 3em auto 0;
+  width: 630px;
+  border: 3px solid blue;
+  padding: 0 1em .5em;
+}
+
+h1 {
+  color: blue;
+  margin: .5em 0;
+}
+
+label {
+  width: 10em;
+  float: left;
+  text-align: right;
+  padding-bottom: .5em;
+}
+
+input {
+  width: 5em;
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+
+textarea {
+  width: 30em;
+  height: 3em;
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
