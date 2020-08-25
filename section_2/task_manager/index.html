@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Task Manager</title>
+</head>
+<body>
+  <main>
+    <h1>Task Manager</h1>
+    <div id="tasks">
+      <!-- <label for="task_list">Task List</label> -->
+      <span id="name">&nbsp;</span>Tasks
+      <br>
+      <textarea name="" id="task_list" cols="45" rows="6"></textarea>
+    </div>
+
+    <label for="task">Task</label>
+    <br>
+    <input type="text" name="task" id="task">
+    <br>
+    <input type="button" name="add_task" id="add_task" value="Add Task">
+    <input type="button" name="clear_tasks" id="clear_tasks" value="Clear Tasks">
+    <br>
+
+    <input type="button" name="delete_task" id="delete_task" value="Delete Task">
+    <input type="button" name="toggle_sort" id="toggle_sort" value="Toggle Sort">
+    <br>
+
+    <input type="button" name="set_name" id="set_name" value="Set Name">
+    <input type="button" name="filter_tasks" id="filter_tasks" value="Filter Tasks">
+    <br>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
