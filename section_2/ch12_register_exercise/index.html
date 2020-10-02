@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Account Registration</title>
+</head>
+<body>
+  <h1>Register for an Account</h1>
+  <form action="register_account.php" id="registration_form" method="get" name="registration_form" class="show">
+
+    <label for="email">E-Mail:</label>
+    <input type="text" name="email" id="email" autocomplete="off">
+    <span id="email_error">&nbsp;</span><br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" autocomplete="new-password">
+    <span id="password_error">&nbsp;</span><br>
+
+    <label for="verify">Verify Password:</label>
+    <input type="password" name="verify" id="verify" autocomplete="new-password"> 
+    <span id="verify_error">&nbsp;</span><br>
+
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first_name">
+    <span id="first_name_error">&nbsp;</span><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" id="last_name">
+    <span id="last_name_error">&nbsp;</span><br>
+
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" id="phone">
+    <span id="phone_error">&nbsp;</span><br>
+
+    <label for="zip">Zip Code:</label>
+    <input type="text" name="zip" id="zip">
+    <span id="zip_error">&nbsp;</span><br>
+
+    <label for="card_type">Card Type:</label>
+    <select name="card_type" id="card_type">
+      <option value="v">Visa</option>
+      <option value="m">MasterCard</option>
+      <option value="d">Discover</option>
+    </select><br>
+
+    <label for="card_number">Card Number:</label>
+    <input type="text" name="card_number" id="card_number">
+    <span id="card_number_error">&nbsp;</span><br>
+
+    <label for="exp_date">Experation Date:</label>
+    <input type="text" name="exp_date" id="exp_date">
+    <span id="exp_date_error">&nbsp;</span><br>
+
+    <input type="button" id="register" value="Register">
+    <input type="button" id="reset" value="Reset">
+  </form>
+  <section id="registration_result" class="hide">
+    <p>
+      Congradulations! Your account registration has been submitted.
+    </p>
+    <p>
+      You will receive an email shortly with more information. Welcome!
+    </p>
+    <input type="button" id="back" value="Back">
+  </section>
+  
+  <script src="javascript/library_navigate.js"></script>
+  <script src="javascript/library_fields.js"></script>
+  <script src="javascript/library_validate.js"></script>
+  <script src="javascript/library_validate_form.js"></script>
+  <script src="javascript/register.js"></script>
+</body>
+</html>

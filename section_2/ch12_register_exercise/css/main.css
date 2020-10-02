@@ -1,0 +1,38 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #eee;
+  width: 800px;
+  margin: 0 auto;
+  border: 3px solid blue;
+  padding: 0 2em 1em;
+  margin-top: 4em;
+}
+
+h1 {
+  font-size: 150%;
+  color: blue;
+  margin-bottom: .5em;
+}
+
+h2 {
+  font-size: 120%;
+  margin-bottom: .25em;
+}
+
+label {
+  width: 9em;
+  float: left;
+}
+
+input, select {
+  width: 20em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.error { color: red; }
+
+.show { display: block; }
+
+.hide { display: none; }
