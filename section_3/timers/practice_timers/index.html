@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .closed {
+      display: none;
+    }
+  </style>
+  <title>Timer Practice</title>
+</head>
+<body>
+  <h1>JavaScript FAQs</h1>
+  <fieldset id="upgrade">
+    <legend>A new version is available</legend>
+    <p>
+      Upgrade will start in 5 seconds!
+      <input type="button" id="cancel" value="Cancel Upgrade">
+      <span id="message">&nbsp;</span>
+    </p>
+  </fieldset>
+  <script>
+    let $ = function(id){
+      return document.getElementById(id);
+    }
+    // create a global variable to hold a reference to the timer.
+    // make it global so all functions have access to it.
+    let timer;
+
+    let startUpgrade = function(){
+      // code to start upgrade goes here
+      $('message').firstChild.nodeValue = 'Download Starting';
+    }
+
+    let cancelUpgrade = function(){
+      clearTimeout(timer);
+      $('upgrade').setAttribute('class', 'closed');
+    }
+
+    window.onload = function(){
+      timer = setTimeout(startUpgrade, 5000);
+      $('cancel').onclick = cancelUpgrade;
+    }
+  </script>
+</body>
+</html>

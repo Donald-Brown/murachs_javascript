@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>FAQ's with timers</title>
+</head>
+<body>
+  <main id="faqs">
+    <h1>JavaScript FAQ's</h1>
+    <fieldset id="upgrade">
+      <legend>A new version is available!</legend>
+      <p>
+        Upgrade will start in 5 seconds!
+        <input type="button" id="cancel" value="Cancel Upgrade">
+        <span id="message">&nbsp;</span>
+      </p>
+    </fieldset>
+    <h2><a href="#" >What is JavaScript?</a></h2>
+        <div>
+            <p>
+              JavaScript is a programming language that's built into the major web browsers.It makes web pages more responsive and saves round trips to the server.
+            </p>
+        </div>
+        <h2><a href="#">What is jQuery?</a></h2>
+        <div>
+            <p>
+              jQuery is a library of the JavaScript functions that you're most likely to need as you develop web sites.
+            </p>
+        </div>
+        <h2><a href="#">Why is jQuery becoming so popular?</a></h2>
+        <div>
+            <p>Three reasons:</p>
+            <ul>
+                <li>It's free.</li>
+                <li>It lets you get more done in less time.</li>
+                <li>All of its functions are cross-browser compatible.</li>
+            </ul>
+        </div>
+        <h3>Number of seconds on page: <span id="counter">0</span></h3>
+  </main>
+  <script src="js/event_library.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
