@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illustrating closure</title>
+</head>
+<body>
+  <button id="first_button">Button one</button>
+  <button id="second_button">Button two</button>
+  <script>
+    let createClickCounter = function(){
+      let count = 0;
+
+      // inner function that refers to the outer function's local variable
+      let clickCounter = function(){
+        count++;
+        // the value of 'this' is the clicked element
+        console.log(this.id + " count is " + count);
+      }
+
+      // returning the inner function, or closure, keeps the variable it refers 
+      // to 'alive', even after the outer function is out of scope
+      return clickCounter;
+    }
+
+    window.onload = function(){
+      // each call to createClickCounter creates a closure that is assigned
+      // as the button's handler with its own count variable
+      document.getElementById('first_button').onclick = createClickCounter();
+      document.getElementById('second_button').onclick = createClickCounter();
+    }
+  </script>
+</body>
+</html>

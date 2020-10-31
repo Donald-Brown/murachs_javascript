@@ -15,5 +15,13 @@
 
 ## chapter 14
 - closures
+- IIFE's
+- 'this' keyword and closures
 - callbacks
 - recursion
+
+## chapter 15
+- namespaces
+- modules
+- custom properties
+

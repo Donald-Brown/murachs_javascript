@@ -69,3 +69,34 @@ node.firstChild.nodeValue = "Bye Worid"
 // }catch(error){
 //   alert(`Error message = ${error.message}\nError name = ${error.name}`);
 // }
+
+// messing with var and let
+let outer = function(){
+  let o = "i am outer";
+  //console.log(o);
+
+  let inner = function(){
+    o += '+ 1';
+    console.log(o);
+  }
+
+  //console.log(o);
+  //console.log(i);
+  return inner;
+}
+
+window.onload = function(){
+  document.getElementById('button').onclick = outer();
+}
+
+let regularLoop = function(){
+  let arr = [];
+  for(let i = 0; i < 5; i++){
+    arr.push(i);
+  }
+  console.log(arr.join());
+  //arr.push(i)
+  console.log(arr.join());
+}
+
+regularLoop();
