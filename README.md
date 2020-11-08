@@ -24,4 +24,5 @@
 - namespaces
 - modules
 - custom properties
-
+- enumerating properties
+- object methods that return information

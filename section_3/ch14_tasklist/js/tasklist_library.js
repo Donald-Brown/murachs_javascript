@@ -32,14 +32,15 @@ let createTaskList = function(div, handler){
       return this;
     },
     delete: function(i){
-      sort();
-      tasks.splice(i, 1);
+      this.sort();
+      this.tasks.splice(i, 1);
       return this;
     },
     clear: function(){
-      tasks.length = 0;
-      storage.clear();
-      div.innerHTML = '';
+      this.tasks.length = 0;
+      this.storage.clear();
+      this.displayDiv.innerHTML = '';
+      console.log(this.tasks);
       return this;
     },
     display: function(){
