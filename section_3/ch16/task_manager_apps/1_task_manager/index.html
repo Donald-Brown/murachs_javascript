@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch16 Task Manager</title>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <main>
+    <h1>Task Manager</h1>
+  <p id="tasks"><textarea id="task_list" cols="48" rows="6"></textarea></p>
+
+  <label for="task">Task:</label><br>
+  <input type="text" id="task" name="task"><br>
+  <label for="task_date">Date:</label><br>
+  <input type="text" id="task_date" name="task_date"><br>
+
+  <input type="button" id="add_task" name="add_task" value="Add Task"><br>
+  <input type="button" id="clear" name="clear" value="Clear Tasks">
+  </main>
+
+  <script src="task_list.js"></script>
+</body>
+</html>
