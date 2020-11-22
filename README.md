@@ -35,3 +35,12 @@
 - order of stringify(serialization) methods
 - problems with checking if a date is a string
 - third party libraries for working with dates
+
+## chapter 17
+- jQuery, when and how
+- common selectors and methods
+- jQuery UI
+- jQuery plugins and where to find them
+- bxSlider
+- Create jQuery plugin
+- exercises

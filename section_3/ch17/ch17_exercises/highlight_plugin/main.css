@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  margin: 2em auto;
+  width: 600px;
+  border: 3px solid blue;
+  padding: 2em 2em 1em;
+  height: 150px;
+}
+
+h1 {
+  color: blue;
+  margin: 0;
+}
+
+nav ul { list-style-type: none; }
+
+nav ul li {
+  border: 2px solid blue;
+  float: left;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 120px;
+  padding: 0.5em;
+  color: blue;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.mouseover {
+  background-color: blue;
+  color: white;
+}
+
+.mouseover_changes {
+  background-color: green;
+  color: #fff;
+}
+
+.mouseout {
+  background-color: #fff;
+  color: red;
+}
+
+.mouseout_changes {
+  background-color: #fff;
+  color: #000;
+}
